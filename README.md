@@ -11,7 +11,7 @@
     do blur, de fato)
   - Convolução calculando a variância do Laplaciano
   
-# Como usar a detecção de blur:
+#### Como usar a detecção de blur:
 ``` python roi_blur_detection.py -i <caminho da(s) imagem(s)> -t <limite (padrao 100)> ```
   - Basicamente o script pode receber 2 parâmetros: -i e -t, mas por enquanto só precisa
   informar o -i com o caminho para a pasta com as imagens de rostos anonimizados. 
