@@ -16,6 +16,9 @@
   - Basicamente o script pode receber 2 parâmetros: -i e -t, mas por enquanto só precisa
   informar o -i com o caminho para a pasta com as imagens de rostos anonimizados. 
 
+### Executar o programa
+  - No terminal, digite: ./exec.sh
+  - Caso você não tenha permissão de execução, digite chmod 777 exec.sh, e tente executar o comando anterior novamente.
 ---
 ### This program must have these requierments:
 ```English Below```
