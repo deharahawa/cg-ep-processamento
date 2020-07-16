@@ -7,6 +7,7 @@ import clear_bg
 
 if __name__ == "__main__":
   # construct the argument parse and parse the arguments
+  print("[INFO] detecting possible blur regions...")
   ap = argparse.ArgumentParser()
   ap.add_argument("-i", "--images", required=True,
     help="path to input directory of images")
@@ -17,7 +18,7 @@ if __name__ == "__main__":
   for image_path in paths.list_images(args["images"]):
     image = cv2.imread(image_path)
 
-    # We may need to clear some bgs in order get a better result
+    #We may need to clear some bgs in order get a better result
     masked_image = clear_bg.remove_bg(image)
 
     # Runs the convolution that runs the blur detection

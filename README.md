@@ -6,12 +6,26 @@
 - Detecção facial
 - Algoritmo Gaussian Blur
 - Aplicação do blur na região de interesse
-- Detecção de blur
+- Detecção de blur seu uso de IA
+  - Remoção do fundo (para foco na região teve a aplicação
+    do blur, de fato)
+  - Convolução calculando a variância do Laplaciano
+  
+#### Como usar a detecção de blur:
+``` python roi_blur_detection.py -i <caminho da(s) imagem(s)> -t <limite (padrao 100)> ```
+  - Basicamente o script pode receber 2 parâmetros: -i e -t, mas por enquanto só precisa
+  informar o -i com o caminho para a pasta com as imagens de rostos anonimizados. 
+
+### Executar o programa
+  - No terminal, digite: ./exec.sh
+  - Caso você não tenha permissão de execução, digite chmod 777 exec.sh, e tente executar o comando anterior novamente.
 ---
 ### This program must have these requierments:
 ```English Below```
 - Facial detection
 - Gaussian blur algorithm
 - Blur application in the region of interest
-- Blur detection
+- Blur detection without AI
+  - Remove background
+  - Convolution calculating the Laplacian var
 
