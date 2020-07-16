@@ -8,6 +8,7 @@ import blur_detection
 # Runs a convolution through the
 # image to find the region
 # args: image in RGB
+# Based on https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/ for running the convolutions
 def convole (masked_image, original_image):
   # Get the image dimension to run the convolution
   (iH, iW) = masked_image.shape[:2]
